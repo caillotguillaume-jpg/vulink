@@ -55,7 +55,7 @@ img { max-width: 100%; display: block; }
   transition: var(--transition);
 }
 
-.logo-img img { display: block; }
+.logo-img img { display: block; height: 52px; width: auto; mix-blend-mode: multiply; }
 
 .logo {
   font-family: var(--font-display);
@@ -780,7 +780,7 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.footer-brand .logo-img img { display: block; }
+.footer-brand .logo-img img { display: block; height: 52px; width: auto; mix-blend-mode: multiply; }
 
 .logo {
   display: block;
