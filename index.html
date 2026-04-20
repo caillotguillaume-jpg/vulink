@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vulink — Cabinet de Recrutement en Optique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="logo">VULINK</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+      <li><a href="nos-prestations.html">Nos prestations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+    <a href="nos-prestations.html">Nos prestations</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Cabinet de recrutement spécialisé</p>
+      <h1 class="hero-title">Le recrutement<br><em>au cœur de l'optique</em></h1>
+      <p class="hero-subtitle">Vulink connecte les professionnels de la vision avec les structures qui leur correspondent. Précisément. Durablement.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+        <a href="nos-prestations.html" class="btn btn-secondary">Nos prestations</a>
+      </div>
+    </div>
+    <div class="hero-deco">
+      <div class="deco-line"></div>
+      <div class="deco-circle"></div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="section expertise">
+    <div class="container">
+      <div class="section-label">Notre différence</div>
+      <h2 class="section-title">L'hyper-spécialisation<br>comme philosophie</h2>
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <div class="card-number">01</div>
+          <h3>Connaissance sectorielle</h3>
+          <p>Nous maîtrisons les spécificités techniques, réglementaires et commerciales du secteur de l'optique. Réfraction, tiers-payant, verres techniques : nous parlons votre langue.</p>
+        </div>
+        <div class="expertise-card">
+          <div class="card-number">02</div>
+          <h3>Réseau qualifié</h3>
+          <p>Notre base de données regroupe des profils actifs et passifs dans toute la filière optique-lunetterie. Nous accédons au marché caché, invisible sur les jobboards classiques.</p>
+        </div>
+        <div class="expertise-card">
+          <div class="card-number">03</div>
+          <h3>Accompagnement complet</h3>
+          <p>De l'audit du besoin au suivi de la période d'essai, nous sécurisons chaque étape du recrutement pour vous et votre futur collaborateur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILS -->
+  <section class="section profils">
+    <div class="container">
+      <div class="profils-inner">
+        <div class="profils-text">
+          <div class="section-label">Les profils que nous recrutons</div>
+          <h2 class="section-title">Tous les métiers<br>de la vision</h2>
+          <p>Du collaborateur en boutique au directeur de réseau, de l'optométriste spécialisé au commercial terrain, Vulink couvre l'ensemble du spectre des métiers de l'optique-lunetterie.</p>
+          <a href="nos-prestations.html" class="btn btn-primary" style="margin-top:2rem; display:inline-block;">Voir nos prestations</a>
+        </div>
+        <div class="profils-list">
+          <div class="profil-item"><span class="dot"></span>Opticiens collaborateurs (BTS OL)</div>
+          <div class="profil-item"><span class="dot"></span>Monteurs-vendeurs qualifiés</div>
+          <div class="profil-item"><span class="dot"></span>Optométristes</div>
+          <div class="profil-item"><span class="dot"></span>Adaptateurs en contactologie</div>
+          <div class="profil-item"><span class="dot"></span>Directeurs de magasin</div>
+          <div class="profil-item"><span class="dot"></span>Responsables de secteur & réseau</div>
+          <div class="profil-item"><span class="dot"></span>Commerciaux lunetiers & verriers</div>
+          <div class="profil-item"><span class="dot"></span>Fonctions support & siège</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANDE -->
+  <section class="cta-band">
+    <div class="container">
+      <p class="cta-text">Un recrutement à mener ? Une opportunité à explorer ?</p>
+      <a href="contact.html" class="btn btn-light">Parlons-en</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">VULINK</span>
+        <p>Cabinet de recrutement spécialisé<br>en optique-lunetterie — Toute la France</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="nos-prestations.html">Nos prestations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:guillaume@vulink.fr">guillaume@vulink.fr</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vulink. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

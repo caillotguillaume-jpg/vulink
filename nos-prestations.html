@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nos prestations — Vulink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">VULINK</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+      <li><a href="nos-prestations.html" class="active">Nos prestations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+    <a href="nos-prestations.html">Nos prestations</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-label">Ce que nous faisons</div>
+      <h1>Des solutions de recrutement<br><em>taillées pour l'optique</em></h1>
+      <p>Du recrutement opérationnel au conseil stratégique en ressources humaines, Vulink intervient à chaque niveau de votre organisation.</p>
+    </div>
+  </section>
+
+  <!-- PRESTATIONS -->
+  <section class="prestations-section">
+    <div class="container">
+
+      <div class="prestation-block fade-up">
+        <div class="prestation-number">01</div>
+        <div class="prestation-content">
+          <h3>Recrutement CDI / CDD</h3>
+          <p>Nous prenons en charge l'intégralité du processus de recrutement pour vos postes permanents ou temporaires : de la rédaction du profil à la présentation des candidats sélectionnés, en passant par le sourcing multicanal et l'évaluation approfondie.</p>
+          <p>Chaque mission débute par un audit du besoin : nous analysons la configuration de votre point de vente, votre zone géographique, la spécialisation technique requise et la culture d'équipe pour définir le profil idéal — et non pas un profil générique.</p>
+          <div class="prestation-tags">
+            <span class="tag">Opticiens collaborateurs</span>
+            <span class="tag">Monteurs-vendeurs</span>
+            <span class="tag">Optométristes</span>
+            <span class="tag">Toute la France</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prestation-block fade-up">
+        <div class="prestation-number">02</div>
+        <div class="prestation-content">
+          <h3>Recrutement cadres & dirigeants</h3>
+          <p>Pour les postes à responsabilité — directeurs de magasin, responsables de secteur, directeurs régionaux, fonctions siège — Vulink déploie une approche de chasse de tête ciblée. Ces profils ne candidatent pas spontanément : ils se trouvent par approche directe et par la confiance que génère notre spécialisation sectorielle.</p>
+          <p>Nous évaluons aussi bien les compétences managériales que la maîtrise des enjeux commerciaux et techniques propres à l'optique.</p>
+          <div class="prestation-tags">
+            <span class="tag">Directeurs de magasin</span>
+            <span class="tag">Responsables réseau</span>
+            <span class="tag">Fonctions siège</span>
+            <span class="tag">Approche directe</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="prestation-block fade-up">
+        <div class="prestation-number">03</div>
+        <div class="prestation-content">
+          <h3>Conseil RH pour opticiens</h3>
+          <p>Au-delà du recrutement, Vulink accompagne les propriétaires de magasins et les DRH sur leurs problématiques RH : structuration des fiches de poste, grilles de rémunération sectorielles, accompagnement à l'intégration, analyse des causes de turnover.</p>
+          <p>Notre connaissance fine du marché de l'optique nous permet de vous apporter des benchmarks concrets et des recommandations opérationnelles — pas des conseils génériques.</p>
+          <div class="prestation-tags">
+            <span class="tag">Audit RH</span>
+            <span class="tag">Benchmark salaires</span>
+            <span class="tag">Structuration d'équipe</span>
+            <span class="tag">Onboarding</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- METHODOLOGIE -->
+  <section class="methodo-section">
+    <div class="container">
+      <div class="section-label" style="color: var(--gold);">Notre façon de travailler</div>
+      <h2 class="section-title">La méthodologie Vulink</h2>
+      <div class="methodo-steps">
+        <div class="methodo-step">
+          <div class="step-num">01</div>
+          <h4>Audit du besoin</h4>
+          <p>Analyse de votre magasin, votre équipe, votre zone et vos exigences techniques pour définir le profil exact recherché.</p>
+        </div>
+        <div class="methodo-step">
+          <div class="step-num">02</div>
+          <h4>Sourcing multicanal</h4>
+          <p>Approche directe, base de données qualifiée et plateformes spécialisées. Nous atteignons aussi les candidats passifs.</p>
+        </div>
+        <div class="methodo-step">
+          <div class="step-num">03</div>
+          <h4>Évaluation approfondie</h4>
+          <p>Au-delà du diplôme : compétences techniques (examen de vue, atelier) et soft skills (service, vente, esprit d'équipe).</p>
+        </div>
+        <div class="methodo-step">
+          <div class="step-num">04</div>
+          <h4>Suivi post-intégration</h4>
+          <p>Accompagnement du candidat et de l'employeur pendant la période d'essai pour garantir la pérennité du recrutement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <p class="cta-text">Un besoin en recrutement ? Discutons-en.</p>
+      <a href="contact.html" class="btn btn-light">Prendre contact</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">VULINK</span>
+        <p>Cabinet de recrutement spécialisé<br>en optique-lunetterie — Toute la France</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="nos-prestations.html">Nos prestations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:guillaume@vulink.fr">guillaume@vulink.fr</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vulink. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
