@@ -55,6 +55,8 @@ img { max-width: 100%; display: block; }
   transition: var(--transition);
 }
 
+.logo-img img { display: block; }
+
 .logo {
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -235,7 +237,7 @@ img { max-width: 100%; display: block; }
 .hero-title em {
   font-style: italic;
   font-weight: 300;
-  color: var(--gold);
+  color: var(--black);
 }
 
 .hero-subtitle {
@@ -263,13 +265,13 @@ img { max-width: 100%; display: block; }
 .deco-line {
   width: 1px;
   height: 200px;
-  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.15), transparent);
   margin: 0 auto 2rem;
 }
 
 .deco-circle {
   width: 120px; height: 120px;
-  border: 1px solid rgba(184,151,90,0.25);
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -295,6 +297,14 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   width: 24px; height: 1px;
   background: var(--gold);
+}
+
+
+.section-label--dark {
+  color: var(--black);
+}
+.section-label--dark::before {
+  background: var(--black);
 }
 
 .section-title {
@@ -770,7 +780,9 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.footer-brand .logo {
+.footer-brand .logo-img img { display: block; }
+
+.logo {
   display: block;
   margin-bottom: 0.8rem;
   font-size: 1.4rem;
@@ -861,4 +873,50 @@ img { max-width: 100%; display: block; }
 @media (max-width: 600px) {
   .methodo-steps { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.5rem; }
+}
+
+/* ── PAGE HERO WITH IMAGE ── */
+.page-hero--with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-right: 0;
+}
+
+.page-hero--with-image .page-hero-content {
+  flex: 0 0 50%;
+}
+
+.page-hero-image {
+  flex: 0 0 45%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 45%;
+  overflow: hidden;
+}
+
+.page-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: grayscale(15%);
+}
+
+@media (max-width: 900px) {
+  .page-hero--with-image {
+    flex-direction: column;
+    padding-right: 1.5rem;
+  }
+  .page-hero-image {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    flex: none;
+  }
 }
