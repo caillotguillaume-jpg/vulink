@@ -17,8 +17,16 @@
       padding: 0 40px;
       gap: 52px;
     }
+    .page-hero { padding-top: 80px; padding-bottom: 80px; }
     .hero-prestations-split .page-hero-content {
-      max-width: 700px;
+      width: 100%;
+      max-width: 100%;
+    }
+    .hero-prestations-split .page-hero-content h1 {
+      max-width: 100%;
+    }
+    .hero-prestations-split .page-hero-content p {
+      max-width: 680px;
     }
     .hero-prestations-table {
       width: 100%;
@@ -35,58 +43,52 @@
     .hp-cols {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+      gap: 20px;
     }
     .hp-col {
-      padding: 32px 32px 28px;
-      background: #2c2c2a;
-      border-right: 1px solid rgba(255,255,255,0.08);
+      padding: 32px 28px;
+      background: rgba(0,0,0,0.04);
+      border-radius: 4px;
+      border-top: 2px solid rgba(0,0,0,0.12);
       transition: background 0.2s;
-    }
-    .hp-col:last-child {
-      border-right: none;
     }
     .hp-num {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.4rem;
       font-weight: 300;
-      color: rgba(255,255,255,0.2);
-      margin-bottom: 16px;
+      color: rgba(0,0,0,0.2);
+      margin-bottom: 14px;
     }
     .hp-title {
       font-family: 'Raleway', sans-serif;
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: #fff;
-      margin-bottom: 12px;
+      color: #1a1a1a;
+      margin-bottom: 10px;
       line-height: 1.4;
     }
     .hp-desc {
       font-family: 'Raleway', sans-serif;
-      font-size: 0.82rem;
+      font-size: 0.81rem;
       font-weight: 400;
-      color: rgba(255,255,255,0.5);
+      color: rgba(0,0,0,0.5);
       line-height: 1.7;
     }
     @media (max-width: 768px) {
-      .hero-prestations-split {
-        padding: 0 20px;
-        gap: 36px;
-      }
-      .hp-cols {
-        grid-template-columns: 1fr;
-      }
-      .hp-col {
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-      }
-      .hp-col:last-child {
-        border-bottom: none;
-      }
+      .hero-prestations-split { padding: 0 20px; gap: 36px; }
+      .hp-cols { grid-template-columns: 1fr; }
+    }
+
+    /* Override external style.css constraints */
+    .page-hero .page-hero-content,
+    .page-hero-content {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .page-hero h1 {
+      max-width: 100% !important;
     }
   </style>
 </head>
