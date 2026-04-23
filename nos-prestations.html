@@ -9,27 +9,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    .hero-prestations-split {
-      display: flex;
-      flex-direction: column;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 40px;
-      gap: 52px;
+    /* Override external CSS */
+    .page-hero {
+      padding-top: 120px !important;
+      padding-bottom: 60px !important;
     }
-    .page-hero { padding-top: 80px; padding-bottom: 80px; }
+    .page-hero .page-hero-content,
+    .page-hero-content {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .page-hero h1 {
+      max-width: 100% !important;
+    }
+
+    /* Two-column layout: text left, table right */
+    .hero-prestations-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      max-width: 100%;
+      padding: 0 60px;
+      gap: 60px;
+    }
     .hero-prestations-split .page-hero-content {
       width: 100%;
-      max-width: 100%;
+      max-width: 100% !important;
     }
     .hero-prestations-split .page-hero-content h1 {
-      max-width: 100%;
+      font-size: 2.8rem;
+      line-height: 1.15;
+      max-width: 100% !important;
     }
     .hero-prestations-split .page-hero-content p {
-      max-width: 680px;
+      max-width: 100%;
     }
     .hero-prestations-table {
       width: 100%;
+      padding-top: 12px;
     }
     .hp-header {
       font-family: 'Raleway', sans-serif;
@@ -41,54 +58,50 @@
       margin-bottom: 16px;
     }
     .hp-cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .hp-col {
-      padding: 32px 28px;
+      padding: 22px 24px;
       background: rgba(0,0,0,0.04);
       border-radius: 4px;
-      border-top: 2px solid rgba(0,0,0,0.12);
-      transition: background 0.2s;
+      border-left: 3px solid rgba(0,0,0,0.15);
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
     }
     .hp-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 300;
       color: rgba(0,0,0,0.2);
-      margin-bottom: 14px;
+      min-width: 28px;
+      padding-top: 2px;
     }
+    .hp-body { flex: 1; }
     .hp-title {
       font-family: 'Raleway', sans-serif;
-      font-size: 0.88rem;
+      font-size: 0.82rem;
       font-weight: 700;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #1a1a1a;
-      margin-bottom: 10px;
-      line-height: 1.4;
+      margin-bottom: 5px;
     }
     .hp-desc {
       font-family: 'Raleway', sans-serif;
-      font-size: 0.81rem;
+      font-size: 0.79rem;
       font-weight: 400;
       color: rgba(0,0,0,0.5);
-      line-height: 1.7;
+      line-height: 1.6;
     }
-    @media (max-width: 768px) {
-      .hero-prestations-split { padding: 0 20px; gap: 36px; }
-      .hp-cols { grid-template-columns: 1fr; }
-    }
-
-    /* Override external style.css constraints */
-    .page-hero .page-hero-content,
-    .page-hero-content {
-      max-width: 100% !important;
-      width: 100% !important;
-    }
-    .page-hero h1 {
-      max-width: 100% !important;
+    @media (max-width: 900px) {
+      .hero-prestations-split {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+        gap: 40px;
+      }
     }
   </style>
 </head>
@@ -124,18 +137,24 @@
         <div class="hp-cols">
           <div class="hp-col">
             <div class="hp-num">01</div>
-            <div class="hp-title">Recrutement au succès</div>
-            <div class="hp-desc">Vous ne payez qu'en cas de recrutement validé. Zéro risque financier, résultats garantis.</div>
+            <div class="hp-body">
+              <div class="hp-title">Recrutement au succès</div>
+              <div class="hp-desc">Vous ne payez qu'en cas de recrutement validé. Zéro risque financier, résultats garantis.</div>
+            </div>
           </div>
           <div class="hp-col">
             <div class="hp-num">02</div>
-            <div class="hp-title">On-boarding collaborateurs</div>
-            <div class="hp-desc">Intégration structurée et suivi pendant la période d'essai pour assurer la pérennité du recrutement.</div>
+            <div class="hp-body">
+              <div class="hp-title">On-boarding collaborateurs</div>
+              <div class="hp-desc">Intégration structurée et suivi pendant la période d'essai pour assurer la pérennité du recrutement.</div>
+            </div>
           </div>
           <div class="hp-col">
             <div class="hp-num">03</div>
-            <div class="hp-title">Conseil & accompagnement RH</div>
-            <div class="hp-desc">Benchmark salaires, audit RH et structuration d'équipe adaptés au secteur de l'optique.</div>
+            <div class="hp-body">
+              <div class="hp-title">Conseil & accompagnement RH</div>
+              <div class="hp-desc">Benchmark salaires, audit RH et structuration d'équipe adaptés au secteur de l'optique.</div>
+            </div>
           </div>
         </div>
       </div>
