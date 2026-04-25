@@ -121,8 +121,8 @@
     .nav-cta,
     .nav-links .nav-cta,
     ul.nav-links li a.nav-cta {
-      display: inline-flex;
-      align-items: center;
+      display: inline-flex !important;
+      align-items: center !important;
       gap: 7px;
       padding: 9px 18px;
       background: #000000 !important;
@@ -138,9 +138,13 @@
       white-space: nowrap;
       transition: background 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
-      margin-left: 0;
-      position: relative;
-      top: -3px;
+      margin: 0 !important;
+      padding-top: 9px !important;
+      padding-bottom: 9px !important;
+      line-height: 1 !important;
+      vertical-align: middle !important;
+      position: static !important;
+      top: auto !important;
     }
     .nav-cta:hover,
     .nav-links .nav-cta:hover,
@@ -154,8 +158,11 @@
       stroke: #ffffff !important;
     }
     ul.nav-links li:has(a.nav-cta) {
-      display: flex;
-      align-items: center;
+      display: flex !important;
+      align-items: center !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      line-height: 1 !important;
     }
     /* Mobile */
     .mobile-cta {
