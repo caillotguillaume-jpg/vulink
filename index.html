@@ -8,6 +8,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Bouton CTA Calendly ── */
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 20px;
+      background: transparent;
+      color: #1a1a2e;
+      border: 1.5px solid #1a1a2e;
+      border-radius: 2px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      margin-left: 18px;
+    }
+    .nav-cta:hover {
+      background: #1a1a2e;
+      color: #fff;
+      border-color: #1a1a2e;
+      box-shadow: 0 4px 18px rgba(26,26,46,0.18);
+    }
+    .nav-cta svg {
+      flex-shrink: 0;
+    }
+    /* Mobile */
+    .mobile-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 8px 20px 4px;
+      padding: 11px 22px;
+      background: #1a1a2e;
+      color: #fff !important;
+      border: 1.5px solid #1a1a2e;
+      border-radius: 2px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .nav-cta { display: none; }
+    }
+  </style>
 </head>
 <body>
 
@@ -20,6 +74,10 @@
       <li><a href="nos-prestations.html">Nos prestations</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Prendre rendez-vous
+    </a>
     <button class="burger" onclick="toggleMenu()">☰</button>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
@@ -27,6 +85,10 @@
     <a href="qui-sommes-nous.html">Qui sommes-nous</a>
     <a href="nos-prestations.html">Nos prestations</a>
     <a href="contact.html">Contact</a>
+    <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="mobile-cta">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Prendre rendez-vous
+    </a>
   </div>
 
   <!-- HERO -->
