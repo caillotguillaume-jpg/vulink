@@ -14,9 +14,9 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      padding: 9px 20px;
-      background: transparent;
-      color: #1a1a2e;
+      padding: 9px 18px;
+      background: #1a1a2e;
+      color: #fff;
       border: 1.5px solid #1a1a2e;
       border-radius: 2px;
       font-family: 'Raleway', sans-serif;
@@ -26,15 +26,13 @@
       text-transform: uppercase;
       text-decoration: none;
       white-space: nowrap;
-      transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
       cursor: pointer;
-      margin-left: 18px;
+      margin-left: 8px;
     }
     .nav-cta:hover {
-      background: #1a1a2e;
-      color: #fff;
-      border-color: #1a1a2e;
-      box-shadow: 0 4px 18px rgba(26,26,46,0.18);
+      background: #2e2e4a;
+      box-shadow: 0 4px 18px rgba(26,26,46,0.22);
     }
     .nav-cta svg {
       flex-shrink: 0;
@@ -73,11 +71,11 @@
       <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
       <li><a href="nos-prestations.html">Nos prestations</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      <li><a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">
       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       Prendre rendez-vous
-    </a>
+    </a></li>
+    </ul>
     <button class="burger" onclick="toggleMenu()">☰</button>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
