@@ -30,7 +30,12 @@
       white-space: nowrap;
       transition: background 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
-      margin-left: 8px;
+      margin-left: 0;
+      vertical-align: middle;
+    }
+    ul.nav-links li:has(a.nav-cta) {
+      display: flex;
+      align-items: center;
     }
     .nav-cta:hover,
     .nav-links .nav-cta:hover,
