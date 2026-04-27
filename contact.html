@@ -123,26 +123,30 @@
 
         <!-- Formulaire droite -->
         <div class="fade-up" style="flex: 1.2; min-width: 300px;">
-          <form class="contact-form" onsubmit="handleSubmit(event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+          <form class="contact-form" onsubmit="handleSubmit(event)" style="display:flex; flex-direction:column; gap:0.5rem;">
+            <div class="form-row" style="margin-bottom:0;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="prenom" style="margin-bottom:0.2rem; font-size:0.8rem;">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required style="padding:0.45rem 0.75rem; font-size:0.85rem;">
               </div>
-              <div class="form-group">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="nom" style="margin-bottom:0.2rem; font-size:0.8rem;">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required style="padding:0.45rem 0.75rem; font-size:0.85rem;">
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+            <div class="form-group" style="margin-bottom:0;">
+              <label for="entreprise" style="margin-bottom:0.2rem; font-size:0.8rem;">Entreprise <span style="font-weight:300; opacity:0.6;">(facultatif)</span></label>
+              <input type="text" id="entreprise" name="entreprise" placeholder="Votre entreprise" style="padding:0.45rem 0.75rem; font-size:0.85rem;">
             </div>
 
-            <div class="form-group">
-              <label for="profil">Vous êtes</label>
-              <select id="profil" name="profil" required>
+            <div class="form-group" style="margin-bottom:0;">
+              <label for="email" style="margin-bottom:0.2rem; font-size:0.8rem;">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.fr" required style="padding:0.45rem 0.75rem; font-size:0.85rem;">
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label for="profil" style="margin-bottom:0.2rem; font-size:0.8rem;">Vous êtes</label>
+              <select id="profil" name="profil" required style="padding:0.45rem 0.75rem; font-size:0.85rem;">
                 <option value="" disabled selected>Sélectionnez votre profil</option>
                 <option value="recruteur">Un recruteur / employeur (opticien, enseigne…)</option>
                 <option value="candidat">Un professionnel de l'optique en recherche</option>
@@ -150,14 +154,14 @@
               </select>
             </div>
 
-            <div class="form-group">
-              <label for="message">Votre message</label>
-              <textarea id="message" name="message" placeholder="Décrivez votre besoin ou votre situation en quelques lignes…" required></textarea>
+            <div class="form-group" style="margin-bottom:0;">
+              <label for="message" style="margin-bottom:0.2rem; font-size:0.8rem;">Votre message</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre besoin ou votre situation en quelques lignes…" required style="padding:0.45rem 0.75rem; font-size:0.85rem; min-height:90px; resize:none;"></textarea>
             </div>
 
-            <p class="form-note">Vos données sont traitées de façon confidentielle et ne sont jamais transmises à des tiers.</p>
+            <p class="form-note" style="font-size:0.72rem; margin:0.2rem 0;">Vos données sont traitées de façon confidentielle et ne sont jamais transmises à des tiers.</p>
 
-            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            <button type="submit" class="btn btn-primary" style="margin-top:0.3rem;">Envoyer le message</button>
 
             <div class="form-success" id="formSuccess">
               ✓ Votre message a bien été envoyé. Nous vous répondrons sous 24h.
