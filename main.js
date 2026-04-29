@@ -1,6 +1,13 @@
 // ── MOBILE MENU ──
 function toggleMenu() {
   const menu = document.getElementById('mobileMenu');
+  const nav = document.querySelector('.nav');
+
+  // Positionner le menu juste sous la nav
+  const navHeight = nav.getBoundingClientRect().height;
+  menu.style.top = navHeight + 'px';
+  menu.style.paddingTop = '1.5rem';
+
   menu.classList.toggle('open');
 }
 
