@@ -75,8 +75,35 @@
       text-transform: uppercase;
       text-decoration: none;
     }
+    /* Mention "au succès" sous le bouton */
+    .nav-cta-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-cta-mention {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.62rem;
+      font-style: italic;
+      color: #555555;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      line-height: 1;
+    }
+    .mobile-cta-mention {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.65rem;
+      font-style: italic;
+      color: #666666;
+      letter-spacing: 0.02em;
+      text-align: center;
+      margin-top: 3px;
+      margin-bottom: 6px;
+    }
     @media (max-width: 768px) {
       .nav-cta { display: none; }
+      .nav-cta-wrapper { display: none; }
     }
   </style>
 </head>
@@ -90,10 +117,15 @@
       <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
       <li><a href="nos-prestations.html">Nos prestations</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      Prendre rendez-vous
-    </a></li>
+      <li style="display:flex;flex-direction:column;align-items:center;gap:0;padding:0;margin:0;">
+        <div class="nav-cta-wrapper">
+          <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Lancer ma recherche
+        </a>
+          <span class="nav-cta-mention">Rémunération uniquement au succès</span>
+        </div>
+      </li>
     </ul>
     <button class="burger" onclick="toggleMenu()">☰</button>
   </nav>
@@ -104,8 +136,9 @@
     <a href="contact.html">Contact</a>
     <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="mobile-cta">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      Prendre rendez-vous
+      Lancer ma recherche
     </a>
+    <p class="mobile-cta-mention">Rémunération uniquement au succès</p>
   </div>
 
   <!-- HERO -->
