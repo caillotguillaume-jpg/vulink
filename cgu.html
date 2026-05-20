@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CGU — Vulink Cabinet de Recrutement en Optique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .cgu-hero {
+      background: #000;
+      color: #fff;
+      padding: 6rem 0 4rem;
+      text-align: center;
+    }
+    .cgu-hero .section-label {
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.14em;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif;
+      margin-bottom: 1rem;
+    }
+    .cgu-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      margin: 0 0 1rem;
+    }
+    .cgu-hero .date {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      font-style: italic;
+    }
+
+    .cgu-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .cgu-body h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #111;
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .cgu-body h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #111;
+      margin: 2rem 0 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .cgu-body p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.92rem;
+      color: #444;
+      line-height: 1.9;
+      margin: 0 0 1.2rem;
+    }
+    .cgu-body a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* Nav CTA repris de index.html */
+    .nav-cta,
+    .nav-links .nav-cta,
+    ul.nav-links li a.nav-cta {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 7px;
+      padding: 9px 18px;
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1.5px solid #000000 !important;
+      border-radius: 2px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      white-space: nowrap;
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      margin: 0 !important;
+      padding-top: 9px !important;
+      padding-bottom: 9px !important;
+      line-height: 1 !important;
+      vertical-align: middle !important;
+      position: static !important;
+      top: auto !important;
+    }
+    .nav-cta:hover,
+    .nav-links .nav-cta:hover,
+    ul.nav-links li a.nav-cta:hover {
+      background: #222222 !important;
+      color: #ffffff !important;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    }
+    .mobile-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 8px 20px 4px;
+      padding: 11px 22px;
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1.5px solid #000000;
+      border-radius: 2px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .nav-cta { display: none; }
+      .cgu-body { padding: 3rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV (identique au reste du site) -->
+  <nav class="nav">
+    <a href="index.html" class="logo-img">
+      <!-- Le logo est en base64 dans style.css / copié depuis index.html, on met un texte de secours -->
+      <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:#111;text-decoration:none;">Vulink</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+      <li><a href="nos-prestations.html">Nos prestations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Prendre rendez-vous
+        </a>
+      </li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+    <a href="nos-prestations.html">Nos prestations</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://calendly.com/guillaume-vulink/30min" target="_blank" rel="noopener noreferrer" class="mobile-cta">
+      Prendre rendez-vous
+    </a>
+  </div>
+
+  <!-- HERO CGU -->
+  <section class="cgu-hero">
+    <div class="section-label">Documents légaux</div>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p class="date">En vigueur au 20/05/2026</p>
+  </section>
+
+  <!-- CONTENU CGU -->
+  <div class="cgu-body">
+
+    <p>Les présentes Conditions Générales d'Utilisation (ci-après dénommées « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles Guillaume Caillot exerçant sous le nom de Vulink (EI) (ci-après dénommé « le Cabinet ») met à la disposition des internautes (ci-après dénommés « les Utilisateurs ») son site internet <strong>www.vulink.fr</strong> (ci-après dénommé « le Site ») et les services associés.</p>
+    <p>L'accès et l'utilisation du Site entraînent l'acceptation sans réserve des présentes CGU par l'Utilisateur.</p>
+
+    <h2>Article 1 — Mentions légales</h2>
+    <p>Le Site est édité par la société <strong>Vulink (EI)</strong>, en cours d'immatriculation, dont le siège social est situé au 128 rue de la Boétie, 75008 Paris.</p>
+    <p><strong>Directeur de la publication :</strong> Guillaume Caillot</p>
+    <p><strong>Contact :</strong> <a href="mailto:guillaume@vulink.fr">guillaume@vulink.fr</a></p>
+    <p><strong>Hébergeur :</strong> OVH, 2 rue Kellermann – 59100 Roubaix</p>
+
+    <h2>Article 2 — Objet et description des services</h2>
+    <p>Le Site a pour objet de présenter les activités de recrutement du Cabinet spécialisé dans les métiers de l'optique, de diffuser des offres d'emploi pour le compte de ses clients (magasins d'optique, réseaux, fabricants), et de permettre aux Utilisateurs de soumettre leur candidature (ci-après dénommés « les Candidats ») ou de formuler des demandes de prestations de services (ci-après dénommés « les Clients »).</p>
+
+    <h2>Article 3 — Spécificités liées au recrutement</h2>
+
+    <h3>3.1 Gratuité totale pour les Candidats</h3>
+    <p>En application de l'article L. 5321-3 du Code du travail, les services de placement et de recherche d'emploi proposés par le Cabinet sont strictement gratuits pour les Candidats. Aucune rétribution, directe ou indirecte, ne peut être exigée d'un Candidat à quelque étape que ce soit du processus de recrutement.</p>
+
+    <h3>3.2 Engagement de non-discrimination</h3>
+    <p>Le Cabinet exerce son activité dans le respect le plus strict des dispositions de l'article L. 1132-1 du Code du travail relatif à la non-discrimination. Les critères de sélection, d'évaluation et de présentation des Candidats reposent exclusivement sur des compétences professionnelles, des qualifications, des diplômes (notamment le BTS Opticien-Lunetier ou équivalent si requis) et l'expérience professionnelle. Aucune distinction n'est faite sur des critères d'origine, de genre, de situation de famille, d'âge, d'opinions ou de caractéristiques physiques.</p>
+
+    <h3>3.3 Sincérité des informations fournies</h3>
+    <p><strong>Obligation du Candidat :</strong> Le Candidat s'engage à fournir des informations exactes, sincères et à jour concernant son parcours professionnel, ses diplômes, ses titres, ses expériences et ses références (conformément à l'article L. 1221-6 du Code du travail). La fourniture d'informations volontairement erronées ou falsifiées (faux CV) constitue un motif de rupture immédiate des relations et de suppression du profil.</p>
+    <p><strong>Obligation du Cabinet :</strong> Le Cabinet s'engage à décrire de manière loyale et transparente les postes à pourvoir dont il a la charge, sans omettre d'éléments essentiels susceptibles d'induire le Candidat en erreur.</p>
+
+    <h2>Article 4 — Collecte des données et droit d'accès (RGPD)</h2>
+    <p>Le Cabinet collecte des données à caractère personnel (CV, lettres de motivation, coordonnées) dans le cadre strict de l'examen des candidatures.</p>
+    <p><strong>Consentement :</strong> En transmettant son CV via le Site, le Candidat consent expressément à ce que ses données soient traitées par le Cabinet et partagées avec des employeurs potentiels (Clients du Cabinet) du secteur de l'optique pour les besoins exclusifs du recrutement.</p>
+    <p><strong>Durée de conservation :</strong> Conformément aux recommandations de la CNIL, les données des Candidats sont conservées pour une durée maximale de deux (2) ans à compter du dernier contact avec le Candidat, sauf accord formel de ce dernier pour prolonger cette période.</p>
+    <p><strong>Droits des utilisateurs :</strong> L'Utilisateur dispose d'un droit d'accès, de rectification, de portabilité, de limitation du traitement et d'effacement de ses données. Ces droits peuvent être exercés à tout moment en écrivant à : <a href="mailto:guillaume@vulink.fr">guillaume@vulink.fr</a></p>
+
+    <h2>Article 5 — Propriété intellectuelle</h2>
+    <p>L'ensemble des éléments constituant le Site (textes, graphismes, logos, images, vidéos, marques, icônes) est la propriété exclusive de la société Vulink (EI) ou de ses partenaires. Toute reproduction, représentation, modification ou adaptation totale ou partielle du Site ou de son contenu, par quelque procédé que ce soit, sans l'autorisation écrite préalable du Cabinet, est strictement interdite et constitue une contrefaçon sanctionnée par le Code de la propriété intellectuelle.</p>
+
+    <h2>Article 6 — Responsabilité</h2>
+
+    <h3>6.1 Accès au Site</h3>
+    <p>Le Cabinet s'efforce de permettre l'accès au Site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d'un événement hors de son contrôle, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du Site. La responsabilité du Cabinet ne saurait être engagée en cas d'impossibilité d'accès au Site.</p>
+
+    <h3>6.2 Processus de recrutement et d'embauche</h3>
+    <p>Le Cabinet agit en tant qu'intermédiaire de recrutement et déploie une obligation de moyens pour mettre en relation Candidats et Clients. Il ne saurait être tenu responsable du fait qu'une candidature ne soit pas retenue par un Client, ni garantir l'issue positive d'un processus de recrutement. La décision finale d'embauche incombe exclusivement au Client (l'employeur). Par conséquent, le Cabinet ne peut être tenu responsable des conditions d'exécution, de rupture ou des litiges survenant dans le cadre du futur contrat de travail liant le Candidat retenu et l'employeur.</p>
+
+    <h2>Article 7 — Liens hypertextes</h2>
+    <p>Le Site peut contenir des liens hypertextes vers d'autres sites internet tiers. Le Cabinet n'exerce aucun contrôle sur le contenu, les politiques de confidentialité ou les pratiques de ces sites et décline toute responsabilité quant à leur contenu ou l'utilisation qui pourrait en être faite par l'Utilisateur.</p>
+
+    <h2>Article 8 — Modification des CGU</h2>
+    <p>Le Cabinet se réserve le droit de modifier, à tout moment et sans préavis, les présentes CGU afin de les adapter aux évolutions du Site et/ou de la réglementation en vigueur. L'Utilisateur est invité à consulter régulièrement les CGU sur le Site.</p>
+
+    <h2>Article 9 — Droit applicable et juridiction compétente</h2>
+    <p>Les présentes CGU sont régies par le droit français. En cas de contestation sur l'interprétation, l'exécution ou la validité des présentes CGU, et à défaut de résolution amiable, le litige sera soumis à la compétence exclusive des tribunaux du ressort de Paris.</p>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;color:#fff;display:block;margin-bottom:0.8rem;">Vulink</span>
+        <p>Cabinet de recrutement spécialisé<br>en optique-lunetterie — Toute la France</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="nos-prestations.html">Nos prestations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:guillaume@vulink.fr">guillaume@vulink.fr</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vulink. Tous droits réservés. — <a href="cgu.html" style="color:rgba(255,255,255,0.5);text-decoration:underline;">Conditions générales d'utilisation</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
