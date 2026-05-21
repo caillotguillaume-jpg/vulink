@@ -234,11 +234,92 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Vulink. Tous droits réservés. — <a href="cgu.html" style="color:rgba(255,255,255,0.5);text-decoration:underline;">Conditions générales d'utilisation</a></p>
+      <p>© 2025 Vulink. Tous droits réservés. — <a href="cgu.html" style="color:rgba(255,255,255,0.5);text-decoration:underline;">Conditions générales d'utilisation</a> — <button onclick="openMentionsModal()" style="background:none;border:none;color:rgba(255,255,255,0.5);text-decoration:underline;cursor:pointer;font-family:inherit;font-size:inherit;padding:0;">Mentions légales</button></p>
     </div>
   </footer>
 
+  <!-- MODALE MENTIONS LÉGALES -->
+  <div id="mentionsModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); overflow-y:auto; padding:2rem 1rem;">
+    <div style="background:#fff; max-width:720px; margin:2rem auto; border-radius:6px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,0.2); font-family:'Raleway',sans-serif;">
+
+      <!-- En-tête -->
+      <div style="background:#000; color:#fff; padding:2rem 2rem 1.5rem; position:relative;">
+        <button onclick="closeMentionsModal()" style="position:absolute;top:1rem;right:1.2rem;background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer;line-height:1;">×</button>
+        <p style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 0.4rem;">Vulink</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;margin:0;">Mentions légales</h2>
+        <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin:0.5rem 0 0;">En vigueur au 21/05/2026</p>
+      </div>
+
+      <!-- Contenu -->
+      <div style="padding:2rem 2.5rem; line-height:1.8; color:#333; font-size:0.88rem;">
+
+        <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'Économie Numérique (LCEN), il est porté à la connaissance des utilisateurs du site <a href="https://www.vulink.fr" style="color:#000;">www.vulink.fr</a> les présentes mentions légales.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin:1.8rem 0 0.6rem;color:#000;">1. Éditeur du Site</h3>
+        <p>Le présent site internet est édité et exploité par :</p>
+        <ul style="padding-left:1.2rem;margin:0.5rem 0 1rem;">
+          <li><strong>Identité :</strong> Vulink, Entrepreneur Individuel (EI)</li>
+          <li><strong>Nom commercial :</strong> Vulink</li>
+          <li><strong>Adresse :</strong> 128 rue de la Boétie, 75008 Paris</li>
+          <li><strong>Immatriculation :</strong> En cours d'enregistrement</li>
+          <li><strong>Contact :</strong> <a href="mailto:guillaume@vulink.fr" style="color:#000;">guillaume@vulink.fr</a></li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin:1.8rem 0 0.6rem;color:#000;">2. Hébergement du Site</h3>
+        <p>Le site est hébergé par :</p>
+        <ul style="padding-left:1.2rem;margin:0.5rem 0 1rem;">
+          <li><strong>Raison sociale :</strong> OVH SAS</li>
+          <li><strong>Siège social :</strong> 2 rue Kellermann, 59100 Roubaix, France</li>
+          <li><strong>Téléphone :</strong> 1007 (ou +33 9 72 10 10 07)</li>
+          <li><strong>Greffe :</strong> RCS Lille Métropole n° 424 761 419</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin:1.8rem 0 0.6rem;color:#000;">3. Directeur de la Publication</h3>
+        <p>Le Directeur de la publication du présent site est <strong>Guillaume Caillot</strong>, en sa qualité de dirigeant de l'entreprise individuelle Vulink.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin:1.8rem 0 0.6rem;color:#000;">4. Propriété Intellectuelle</h3>
+        <p>L'ensemble des contenus de ce site (architecture, textes, fiches de postes, descriptifs des métiers de l'optique, logos, graphismes et images) est la propriété exclusive de Vulink (EI) ou de ses partenaires (clients opticiens ayant fourni leurs logos).</p>
+        <p>Toute reproduction, représentation, modification ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord écrit préalable de l'éditeur, conformément à l'article L.335-2 du Code de la Propriété Intellectuelle.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin:1.8rem 0 0.6rem;color:#000;">5. Spécificités de l'Activité (Recrutement &amp; Réglementation)</h3>
+        <p>L'activité d'intermédiaire en recrutement est une activité libre en France, mais encadrée par le Code du travail. À ce titre :</p>
+        <ul style="padding-left:1.2rem;margin:0.5rem 0 1rem;">
+          <li><strong>Gratuité des Services :</strong> Aucun frais, direct ou indirect, n'est demandé aux candidats à l'emploi tout au long du processus de recrutement, conformément à l'article L. 5321-3 du Code du travail.</li>
+          <li><strong>Égalité des chances :</strong> Les opérations de sélection menées par Vulink se conforment strictement aux dispositions de l'article L. 1132-1 du Code du travail sur la non-discrimination professionnelle.</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin:1.8rem 0 0.6rem;color:#000;">6. Protection des Données Personnelles (RGPD)</h3>
+        <p>Dans le cadre de son activité de recrutement en optique, Vulink est amenée à collecter et traiter des données personnelles de candidats (CV, parcours professionnels, diplômes d'opticien).</p>
+        <ul style="padding-left:1.2rem;margin:0.5rem 0 1rem;">
+          <li><strong>Responsable du traitement :</strong> Guillaume Caillot</li>
+          <li><strong>Finalité :</strong> Gestion, évaluation et transmission des candidatures aux recruteurs du secteur.</li>
+          <li><strong>Droit des utilisateurs :</strong> Conformément au Règlement Général sur la Protection des Données (RGPD), tout candidat dispose d'un droit d'accès, de rectification, de suppression et de portabilité de ses données. Pour exercer ce droit, envoyez un e-mail à : <a href="mailto:guillaume@vulink.fr" style="color:#000;">guillaume@vulink.fr</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Pied de modale -->
+      <div style="border-top:1px solid #eee;padding:1.2rem 2.5rem;text-align:right;">
+        <button onclick="closeMentionsModal()" style="background:#000;color:#fff;border:none;padding:10px 24px;font-family:'Raleway',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border-radius:3px;cursor:pointer;">Fermer</button>
+      </div>
+
+    </div>
+  </div>
+
   <script src="main.js"></script>
+  <script>
+    function openMentionsModal() {
+      document.getElementById('mentionsModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMentionsModal() {
+      document.getElementById('mentionsModal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    document.getElementById('mentionsModal').addEventListener('click', function(e) {
+      if (e.target === this) closeMentionsModal();
+    });
+  </script>
 
   <!-- MODAL FORMULAIRE RECHERCHE -->
   <div id="searchModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); backdrop-filter:blur(4px); overflow-y:auto; padding:2rem 1rem;">
